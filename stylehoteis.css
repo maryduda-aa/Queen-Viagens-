@@ -1,0 +1,214 @@
+
+/* BANNER */
+.banner-hoteis {
+    min-height: 420px;
+    background:
+        linear-gradient(rgba(40, 0, 70, 0.45), rgba(40, 0, 70, 0.55)),
+        url("https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600");
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.texto-banner-hoteis h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.texto-banner-hoteis p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.texto-banner-hoteis a {
+    display: inline-block;
+    background: #a855f7;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* PESQUISA */
+.pesquisa-hoteis {
+    background: #f5eaff;
+    padding: 45px 6%;
+    text-align: center;
+}
+
+.pesquisa-hoteis h2 {
+    color: #7e22ce;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.pesquisa-hoteis p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.campos-hoteis {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    text-align: left;
+}
+
+.campos-hoteis div {
+    display: flex;
+    flex-direction: column;
+}
+
+.campos-hoteis label {
+    color: #6b21a8;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.campos-hoteis input {
+    padding: 13px;
+    border: 1px solid #d8b4fe;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+}
+
+.campos-hoteis input:focus {
+    border-color: #9333ea;
+}
+
+.pesquisa-hoteis button {
+    background: linear-gradient(90deg, #9333ea, #c084fc);
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    margin-top: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.pesquisa-hoteis button:hover {
+    background: #6b21a8;
+}
+
+#resultado-hotel {
+    color: #6b21a8;
+    font-weight: bold;
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+/* SEÇÕES DE HOTÉIS */
+.secao-hoteis {
+    padding: 45px 6%;
+}
+
+.secao-hoteis h2 {
+    color: #7e22ce;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.grade-hoteis {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* CARDS */
+.card-hotel {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(80, 0, 120, 0.15);
+    transition: 0.3s;
+}
+
+.card-hotel:hover {
+    transform: translateY(-8px);
+}
+
+.card-hotel img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.conteudo-hotel {
+    padding: 22px;
+}
+
+.conteudo-hotel h3 {
+    color: #7e22ce;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.conteudo-hotel p {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.conteudo-hotel ul {
+    color: #555;
+    padding-left: 20px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+.conteudo-hotel button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #9333ea, #c084fc);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.conteudo-hotel button:hover {
+    background: #6b21a8;
+}
+
+/* INTERNACIONAIS */
+.internacionais-hoteis {
+    background: #f5eaff;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 800px) {
+    .grade-hoteis {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .campos-hoteis {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .texto-banner-hoteis h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 550px) {
+    .grade-hoteis,
+    .campos-hoteis {
+        grid-template-columns: 1fr;
+    }
+
+    .secao-hoteis {
+        padding: 30px 5%;
+    }
+}

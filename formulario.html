@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulário | Queen Viagens</title>
+
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+
+<header>
+    <h1> Queen Viagens</h1>
+    <p>Vamos planejar sua próxima aventura?</p>
+</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="passagens.html">Passagens</a>
+    <a href="hoteis.html">Hotéis</a>
+    <a href="pacotes.html">Pacotes</a>
+    <a href="carros.html">Carros</a>
+    <a href="cruzeiros.html">Cruzeiros</a>
+    <a href="formulario.html">Formulário</a>
+</nav>
+
+<section class="titulo">
+    <h2>Formulário de Reserva </h2>
+    <p>Preencha seus dados para planejarmos sua viagem!</p>
+</section>
+
+<main class="container">
+
+    <form id="formReserva">
+
+        <h3>👤 Dados pessoais</h3>
+
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" placeholder="Digite seu e-mail" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" placeholder="(00) 00000-0000" required>
+
+        <div class="linha"></div>
+
+        <h3>✈️ Informações da viagem</h3>
+
+        <label for="servico">Qual serviço deseja?</label>
+        <select id="servico" required>
+            <option value="">Selecione uma opção</option>
+            <option>Passagens</option>
+            <option>Hotéis</option>
+            <option>Pacotes de viagem</option>
+            <option>Aluguel de carros</option>
+            <option>Cruzeiros</option>
+        </select>
+
+        <label for="destino">Destino desejado:</label>
+        <input type="text" id="destino" placeholder="Ex: Paris, Rio de Janeiro..." required>
+
+        <label for="tipo">Tipo de viagem:</label>
+        <select id="tipo" required>
+            <option value="">Selecione</option>
+            <option>Nacional</option>
+            <option>Internacional</option>
+        </select>
+
+        <label for="data">Data de ida:</label>
+        <input type="date" id="data" required>
+
+        <label for="pessoas">Quantidade de viajantes:</label>
+        <input type="number" id="pessoas" min="1" max="30" value="1" required>
+
+        <label for="observacao">Observações:</label>
+        <textarea id="observacao" placeholder="Conte-nos mais sobre sua viagem..."></textarea>
+
+        <button type="submit">Enviar formulário </button>
+
+    </form>
+
+</main>
+
+<footer>
+    <h3>Queen Viagens </h3>
+    <p>Seu destino, nossa prioridade!</p>
+    <p>© 2026 Queen Viagens</p>
+</footer>
+
+<script src="formulario.js"></script>
+
+</body>
+</html>

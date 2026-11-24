@@ -1,0 +1,136 @@
+
+/* HOME */
+
+.home-banner {
+    background: linear-gradient
+        90deg,
+        rgba(57, 15, 83, 0.85),
+        rgba(80, 30, 110, 0.25)
+}
+  ul  { 
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    color: white;
+  }
+
+.home-texto {
+    max-width: 550px;
+}
+
+.home-texto h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.home-texto p {
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.botao-home {
+    display: inline-block;
+    background-color: #d9a5f5;
+    color: #42145d;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao-home:hover {
+    background-color: white;
+}
+
+.sobre-home {
+    text-align: center;
+    padding: 45px 20px;
+    background-color: #f1e3fa;
+}
+
+.sobre-home h2,
+.servicos-home h2,
+.destinos-home h2 {
+    color: #4b176b;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sobre-home p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+.servicos-home {
+    padding: 45px 25px;
+}
+
+.servicos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.servico {
+    background-color: white;
+    width: 280px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #ddd;
+}
+
+.servico h3 {
+    color: #702b91;
+    margin-bottom: 15px;
+}
+
+.servico p {
+    margin-bottom: 18px;
+}
+
+.servico a {
+    color: #702b91;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.servico a:hover {
+    color: #b36bd6;
+}
+
+.destinos-home {
+    padding: 45px 25px;
+    background-color: #f1e3fa;
+}
+
+.destinos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.destino-home {
+    background-color: white;
+    width: 220px;
+    padding: 35px 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+.destino-home h3 {
+    color: #702b91;
+    margin-bottom: 12px;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+

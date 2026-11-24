@@ -1,0 +1,156 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fff0f7, #ead5ff);
+    color: #4b155f;
+}
+
+/* CABEÇALHO */
+header {
+    background: linear-gradient(90deg, #8e238e, #ed68ad);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+/* MENU */
+nav {
+    background: #67166f;
+    padding: 18px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffb6dc;
+}
+
+/* TÍTULO */
+.titulo {
+    text-align: center;
+    padding: 40px 15px;
+}
+
+.titulo h2 {
+    color: #92278f;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+/* CRUZEIROS */
+.cruzeiros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 30px 5%;
+}
+
+/* CARDS */
+.card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 25px;
+    box-shadow: 0 5px 18px rgba(100, 20, 100, 0.15);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #92278f;
+    font-size: 21px;
+    margin: 18px 10px;
+}
+
+.card p {
+    color: #666;
+    margin: 12px;
+}
+
+.card span {
+    display: block;
+    color: #8e238e;
+    margin: 15px;
+    font-weight: bold;
+}
+
+.card strong {
+    display: block;
+    color: #d63391;
+    font-size: 24px;
+    margin: 18px;
+}
+
+/* BOTÃO */
+.card button {
+    background: linear-gradient(90deg, #a52a91, #ed62a9);
+    color: white;
+    border: none;
+    padding: 13px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    transform: scale(1.08);
+}
+
+/* RODAPÉ */
+footer {
+    background: #67166f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 10px;
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .titulo h2 {
+        font-size: 25px;
+    }
+
+    .cruzeiros {
+        padding: 20px;
+    }
+}

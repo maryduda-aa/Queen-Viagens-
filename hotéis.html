@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotéis | Queen Viagens</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hoteis.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1> Queen Viagens</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="passagens.html">Passagens</a>
+            <a href="hoteis.html">Hotéis</a>
+            <a href="pacotes.html">Pacotes</a>
+            <a href="cruzeiros.html">Cruzeiros</a>
+            <a href="carros.html">Carros</a>
+            <a href="atendimento.html">Atendimento</a>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner-hoteis">
+        <div class="texto-banner-hoteis">
+            <h2>Encontre o hotel perfeito!</h2>
+            <p>Conforto e tranquilidade para deixar sua viagem inesquecível.</p>
+            <a href="#pesquisa-hoteis">Encontrar hotéis</a>
+        </div>
+    </section>
+
+    <!-- PESQUISA -->
+    <section class="pesquisa-hoteis" id="pesquisa-hoteis">
+
+        <h2> Encontre sua hospedagem</h2>
+        <p>Preencha as informações para pesquisar sua estadia.</p>
+
+        <form id="formHotel">
+
+            <div class="campos-hoteis">
+
+                <div>
+                    <label for="cidade">Destino:</label>
+                    <input type="text" id="cidade" placeholder="Ex: Rio de Janeiro" required>
+                </div>
+
+                <div>
+                    <label for="checkin">Data de entrada:</label>
+                    <input type="date" id="checkin" required>
+                </div>
+
+                <div>
+                    <label for="checkout">Data de saída:</label>
+                    <input type="date" id="checkout" required>
+                </div>
+
+                <div>
+                    <label for="hospedes">Hóspedes:</label>
+                    <input type="number" id="hospedes" min="1" value="2" required>
+                </div>
+
+                <div>
+                    <label for="quartos">Quartos:</label>
+                    <input type="number" id="quartos" min="1" value="1" required>
+                </div>
+
+            </div>
+
+            <button type="submit">Pesquisar hospedagem</button>
+
+        </form>
+
+        <div id="resultado-hotel"></div>
+
+    </section>
+
+    <!-- HOTÉIS NACIONAIS -->
+    <section class="secao-hoteis">
+
+        <h2>🇧🇷 Hotéis no Brasil</h2>
+
+        <div class="grade-hoteis">
+
+            <div class="card-hotel">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800" alt="Hotel de luxo">
+                <div class="conteudo-hotel">
+                    <h3>Hotel Luxo Tropical</h3>
+                    <p>Rio de Janeiro - RJ</p>
+                    <p>Hotel com piscina, restaurante e vista maravilhosa.</p>
+                    <ul>
+                        <li>Wi-Fi gratuito</li>
+                        <li>Piscina</li>
+                        <li>Café da manhã</li>
+                    </ul>
+                    <button onclick="escolherHotel('Hotel Luxo Tropical')">Ver hotel</button>
+                </div>
+            </div>
+
+            <div class="card-hotel">
+                <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800" alt="Resort com piscina">
+                <div class="conteudo-hotel">
+                    <h3>Resort Paradise</h3>
+                    <p>Porto de Galinhas - PE</p>
+                    <p>Um lugar perfeito para relaxar e aproveitar as férias.</p>
+                    <ul>
+                        <li>Piscina</li>
+                        <li>Restaurante</li>
+                        <li>Área de lazer</li>
+                    </ul>
+                    <button onclick="escolherHotel('Resort Paradise')">Ver hotel</button>
+                </div>
+            </div>
+
+            <div class="card-hotel">
+                <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800" alt="Hotel elegante">
+                <div class="conteudo-hotel">
+                    <h3>Hotel Confort Palace</h3>
+                    <p>Gramado - RS</p>
+                    <p>Conforto e tranquilidade em um ambiente aconchegante.</p>
+                    <ul>
+                        <li>Wi-Fi gratuito</li>
+                        <li>Restaurante</li>
+                        <li>Café da manhã</li>
+                    </ul>
+                    <button onclick="escolherHotel('Hotel Confort Palace')">Ver hotel</button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <h2> Queen Viagens</h2>
+        <p>Sua viagem começa aqui!</p>
+        <p>© 2026 Queen Viagens - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="hoteis.js"></script>
+
+</body>
+</html>

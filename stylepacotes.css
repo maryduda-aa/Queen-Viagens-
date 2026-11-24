@@ -1,0 +1,201 @@
+
+/* BANNER */
+.banner-pacotes {
+    min-height: 420px;
+    background:
+        linear-gradient(rgba(35, 0, 65, 0.45), rgba(35, 0, 65, 0.55)),
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.texto-banner h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.texto-banner p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.botao-banner {
+    display: inline-block;
+    background: #a855f7;
+    color: white;
+    padding: 13px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao-banner:hover {
+    background: #7e22ce;
+}
+
+/* INTRODUÇÃO */
+.introducao-pacotes {
+    text-align: center;
+    padding: 45px 20px 20px;
+}
+
+.introducao-pacotes h2 {
+    color: #7e22ce;
+    font-size: 30px;
+}
+
+.introducao-pacotes p {
+    color: #555;
+    max-width: 700px;
+    margin: 15px auto;
+    line-height: 1.7;
+}
+
+/* SEÇÕES */
+.secao-pacotes {
+    padding: 45px 6%;
+}
+
+.secao-pacotes h2 {
+    color: #7e22ce;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* CARDS */
+.grade-pacotes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card-pacote {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(80, 0, 120, 0.15);
+    transition: 0.3s;
+}
+
+.card-pacote:hover {
+    transform: translateY(-8px);
+}
+
+.card-pacote img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.conteudo-card {
+    padding: 22px;
+}
+
+.conteudo-card h3 {
+    color: #7e22ce;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.conteudo-card p {
+    color: #555;
+    line-height: 1.5;
+    min-height: 48px;
+}
+
+.conteudo-card ul {
+    padding-left: 20px;
+    margin: 18px 0;
+    color: #555;
+    line-height: 1.9;
+}
+
+.conteudo-card button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #9333ea, #c084fc);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.conteudo-card button:hover {
+    background: #6b21a8;
+}
+
+/* PACOTES INTERNACIONAIS */
+.internacionais {
+    background: #f5eaff;
+}
+
+/* VANTAGENS */
+.vantagens-pacotes {
+    padding: 50px 6%;
+    text-align: center;
+}
+
+.vantagens-pacotes h2 {
+    color: #7e22ce;
+    margin-bottom: 35px;
+}
+
+.vantagens {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.vantagens div {
+    background: #f5eaff;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.vantagens span {
+    font-size: 35px;
+}
+
+.vantagens h3 {
+    color: #7e22ce;
+    margin: 12px 0;
+}
+
+.vantagens p {
+    color: #555;
+    line-height: 1.5;
+}
+
+/* CELULAR E TABLET */
+@media (max-width: 800px) {
+    .grade-pacotes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vantagens {
+        grid-template-columns: 1fr;
+    }
+
+    .texto-banner h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 550px) {
+    .grade-pacotes {
+        grid-template-columns: 1fr;
+    }
+
+    .secao-pacotes {
+        padding: 30px 5%;
+    }
+}
+
